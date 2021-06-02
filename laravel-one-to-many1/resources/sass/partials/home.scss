@@ -30,39 +30,7 @@
                     text-transform: capitalize;
                     border-bottom: solid 1px black;
                 }
-
-                a.pag:hover {
-                    color: lime;
-                }
-
-                .options {
-
-                    a.mod:hover{
-                        color:yellow;
-                    }
-
-                    a.del {
-                        margin-left: 5px;
-    
-                        &:hover {
-                            color: red;
-                        }
-                    }
-                }
             }
-        }
-    }
-
-    .new a {
-        margin: 35px;
-        padding: 10px 20px;
-        font-size: 20px;
-        color: white;
-        background-color: darkblue;
-        border-radius: 10px;
-
-        &:hover {
-            text-decoration: underline;
         }
     }
 }

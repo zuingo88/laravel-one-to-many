@@ -96,35 +96,6 @@ footer {
   border-bottom: solid 1px black;
 }
 
-#home ul li .card a.pag:hover {
-  color: lime;
-}
-
-#home ul li .card .options a.mod:hover {
-  color: yellow;
-}
-
-#home ul li .card .options a.del {
-  margin-left: 5px;
-}
-
-#home ul li .card .options a.del:hover {
-  color: red;
-}
-
-#home .new a {
-  margin: 35px;
-  padding: 10px 20px;
-  font-size: 20px;
-  color: white;
-  background-color: darkblue;
-  border-radius: 10px;
-}
-
-#home .new a:hover {
-  text-decoration: underline;
-}
-
 * {
   margin: 0;
   padding: 0;
