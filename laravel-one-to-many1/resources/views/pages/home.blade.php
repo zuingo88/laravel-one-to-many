@@ -2,34 +2,23 @@
 @section('content')
     <div id="home">
         <div class="container">
-            {{-- <h1>Match: </h1>
-
             <div class="list_container">
+                <h1>Posts</h1>
                 <ul class="flex_wrap">
-                    @foreach ($matches as $match)
+                    @foreach ($posts as $post)
                         <li>
-                            <div class="card flex space_bet">
-                                <a class="pag" href="{{ route('show', $match->id) }}">
-                                    <h3>{{ $match->team1 }} - {{ $match->team2 }}</h3>
-                                </a>
-
-                                <div class="options flex">
-                                    <a class="mod" href="{{ route('edit', $match->id) }}">
-                                        <h3>
-                                            <i class="fas fa-user-edit"></i>
-                                        </h3>
-                                    </a>
-                                    <a class="del" href="{{ route('destroy', $match->id) }}">
-                                        <h3>
-                                            <i class="fas fa-user-times"></i>
-                                        </h3>
-                                    </a>
-                                </div>
+                            <div class="card flex-col">
+                                <h3>{{ $post->title }}</h3>
+                                <p>{{ $post->text }}</p>
+                                <p><i class="fas fa-tag"></i> TAG: {{ $post->tag->name }}</p>
+                                <p>• DESCRIPTION: {{ $post->tag->description }}</p>
+                                <p><i class="fas fa-info-circle"></i> DETAIL: {{ $post->detail->argument }}</p>
+                                <P><i class="far fa-thumbs-up"></i> {{ $post->detail->likes }} LIKES </P>
                             </div>
                         </li>
                     @endforeach
                 </ul>
-            </div> --}}
+            </div>
         </div>
     </div>
 @endsection

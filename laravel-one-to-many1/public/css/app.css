@@ -92,6 +92,7 @@ footer {
 }
 
 #home ul li .card h3 {
+  text-transform: capitalize;
   border-bottom: solid 1px black;
 }
 
